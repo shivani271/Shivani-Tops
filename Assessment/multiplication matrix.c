@@ -2,11 +2,11 @@
 
 #include<stdio.h>
 
-int multiplication(int a[2][2],int b[2][2]);   //function declaration
+int multiplication(int a[12][12],int b[12][12]);   //function declaration
 
 int main()
 {		
-	int a[2][2],b[2][2];
+	int a[12][12],b[12][12];
 	
 	/*call function to multiply both matrix*/
 	multiplication(a,b);  //function calling
@@ -14,9 +14,9 @@ int main()
 	return 0;
 }
 
-int multiplication(int a[2][2],int b[2][2])  //function defination
+int multiplication(int a[12][12],int b[12][12])  //function defination
 {
-	int mul[2][2],i,j,k,n,m,p,q;
+	int mul[12][12],i,j,k,n,m,p,q;
 	
 	printf("\t\t\tMatrix Multiplication\n");
 	
@@ -87,9 +87,9 @@ int multiplication(int a[2][2],int b[2][2])  //function defination
 	
 	/*print multipication of both matrix*/
 	printf("\n\n\n---------------Result : Multiplication Matrix--------------\n\n");
-	for(i=0;i<2;i++) 
+	for(i=0;i<n;i++) 
 		{
-		for(j=0;j<2;j++) 
+		for(j=0;j<q;j++) 
 		{
 			printf("%d   ",mul[i][j]);
 		}
